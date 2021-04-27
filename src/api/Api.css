@@ -16,6 +16,7 @@ html{
     display: flex;
     height: calc(100vh - var(--padding-sidebar) * 2);
     padding: var(--padding-sidebar);
+    padding-right: 0;
 
     background-color: var(--sidebar-background-color);
     flex-flow: column nowrap;
@@ -25,28 +26,43 @@ html{
 }
 .sidebar-router .sidebar-router-logo{
     border-radius: 8px;
-    width: 56px;
-    height: 56px;
     background-color: rgba(235, 150, 106, .2);
 
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX( calc(var(--padding-sidebar)/2 *-1 ) );
 }
 .sidebar-router .sidebar-router-logo li{
-
+    padding: 10px;
 }
 .sidebar-router .sidebar-router-nav{
-    height: var(--sidebar-nav-height);
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: center;
 }
 .sidebar-router .sidebar-router-sign-out{
 
 }
 .sidebar-router li{
     list-style-type: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+
 }
+.sidebar-router .sidebar-router-nav li{
+    display: flex;
+}
+.sidebar-router .sidebar-router-nav li[data-active=true]{
+    background-color: #252836;
+    margin: 10px auto;
+}
+.sidebar-router-nav li a {
+    padding: 20px;
+    border-radius: 8px;
+}
+li[data-active=true] a{
+    background-color: #EA7C68;
+}
+
 p{color: white}

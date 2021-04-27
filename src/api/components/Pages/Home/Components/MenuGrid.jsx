@@ -3,13 +3,17 @@ import SVG_arrow_down from '../../../../assets/svg/SVG_arrow_down';
 import MenuItem from './MenuItem'
 import getItemsRequest from '../service/getMassiveItems'
 
-const MenuGrid = () => {
+const MenuGrid = (props) => {
    
    const [items, setItems] = useState(undefined);
+   const [style, setStyle] = useState('menu_grid_items');
+   
+   // setFade('fade_out');
    
    useEffect( async () => {
       setItems( await getItemsRequest() );
-   }, []);
+      props.changeFade('fade_in');
+   }, [props.fade]);
    
    return (
       <div className="menu_grid">
@@ -20,11 +24,15 @@ const MenuGrid = () => {
                Dine in
             </button>
          </div>
-         <div className="menu_grid_items">
+         <div className={style + " " + props.fade} >
             { items && items.items.map(item => {
-               return <MenuItem name={item.name} price={item.price} count={item.count} />
+               return item.category.map(category => {
+                  if(category === props.category){
+                     return <MenuItem name={item.name} price={item.price} count={item.count} img={item.img} />
+                  }
+               })
+               
             }) }
-            { items && console.log(items) }
          </div>
       </div>
    )

@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-
+    padding: 5px;
 
     margin: var(--item-margin-top) 10px calc( var(--item-margin-top) / 2);
     background: #1F1D2B;
@@ -29,6 +29,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    flex-basis: 100%;
 }
 img{
     width: var(--img-width);

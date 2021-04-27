@@ -107,7 +107,19 @@ button:focus{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    opacity: 0;
 }
 .menu_grid_items::-webkit-scrollbar{
     display: none;
+}
+
+/*................*/
+.fade_out{
+    /*transition: 1s;*/
+    opacity: 0;
+}
+.fade_in{
+    transition: 1s;
+    opacity: 1 !important;
+    transition-timing-function: ease-in-out;
 }
