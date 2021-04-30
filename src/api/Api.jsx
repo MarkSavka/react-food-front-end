@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './Api.css'
 
 // Pages
-import Home from './components/Pages/Home/index'
-import Discount from './components/Pages/Discount'
-import Dashboard from './components/Pages/Dashboard'
-import Message from './components/Pages/Message'
-import Notification from './components/Pages/Notification'
-import NotFound from './components/Pages/NotFound'
-import Setting from './components/Pages/Setting'
+import Home from './Components/Pages/Home/index'
+import Discount from './Components/Pages/Discount'
+import Dashboard from './Components/Pages/Dashboard'
+import Message from './Components/Pages/Message'
+import Notification from './Components/Pages/Notification'
+import NotFound from './Components/Pages/NotFound'
+import Setting from './Components/Pages/Setting'
 
 // SVG
 import SVG_home from './assets/svg/SVG_home'

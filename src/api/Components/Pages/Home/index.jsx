@@ -1,6 +1,6 @@
 import React from 'react'
-import MenuPage from './Components/MenuPage'
-import Order from './Components/Order'
+import MenuPage from './Components/MenuPage/MenuPage'
+import Order from './Components/Order/Order'
 
 import './home.css'
 
