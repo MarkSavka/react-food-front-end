@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/home.css'
+import '../home.css'
 
 import Header from './Header'
 import Menu from './Menu/Menu'

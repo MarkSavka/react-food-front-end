@@ -31,16 +31,16 @@
     justify-content: space-evenly;
     flex-basis: 100%;
 }
-img{
+.item img{
     width: var(--img-width);
     height: var(--img-height);
     transform: translateY( calc( var(--img-height) / 2 * -1) );
 }
-p{
+.item p{
     text-align: center;
     font-family: 'Aclonica', sans-serif;
     font-size: 20px;
 }
-p:last-child{
+.item p:last-child{
     color: gray;
 }

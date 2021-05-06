@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../../Styles/item.css';
+import '../Styles/item.css';
 
 const MenuItem = (props) => {
    const [name, setName] = useState('');

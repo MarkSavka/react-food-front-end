@@ -1,9 +1,10 @@
 import React from 'react'
+import './Styles/order.css'
 
 const Order = () => {
    return (
       <div className="order">
-         <p>Order</p>
+         <p>Order #342574</p>
       </div>
    )
 }

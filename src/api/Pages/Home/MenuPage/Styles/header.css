@@ -36,7 +36,7 @@ header .header-input-search{
     color: white;
     font-family: "Lexend", sans-serif;
 
-    background: #2D303E url(../../../assets/img/search.png) no-repeat 10px center;
+    background: #2D303E url(../../../../assets/img/search.png) no-repeat 10px center;
     background-size: 20px;
 }
 input:focus{

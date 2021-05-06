@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import MenuList from './MenuList'
 import MenuGrid from './MenuGrid'
-import '../../Styles/menu.css'
+import '../Styles/menu.css'
 
 const Menu = () => {
    
