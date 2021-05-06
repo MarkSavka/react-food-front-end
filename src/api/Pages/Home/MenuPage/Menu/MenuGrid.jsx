@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SVG_arrow_down from '../../../../assets/svg/SVG_arrow_down';
 import MenuItem from './MenuItem'
-import getItemsRequest from '../service/getMassiveItems'
+import getItemsRequest from '../../service/getMassiveItems'
 
 const MenuGrid = (props) => {
    

@@ -41,14 +41,10 @@ html{
     flex-flow: column nowrap;
     justify-content: center;
 }
-.sidebar-router .sidebar-router-sign-out{
-
-}
 .sidebar-router li{
     list-style-type: none;
     border-radius: 8px 0 0 8px;
     padding: 10px;
-
 }
 .sidebar-router .sidebar-router-nav li{
     display: flex;
@@ -63,6 +59,7 @@ html{
 }
 li[data-active=true] a{
     background-color: #EA7C68;
+    transition: 1s;
 }
 
 p{color: white}

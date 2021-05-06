@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../home.css'
+import '../Styles/home.css'
 
-import Header from '../Header'
-import Menu from '../Menu'
+import Header from './Header'
+import Menu from './Menu/Menu'
 
 const MenuPage = () => {
    return (
