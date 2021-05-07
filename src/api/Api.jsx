@@ -34,7 +34,7 @@ const Api = () => {
    const [colorSVG, setColorSVG] = useState(('#EA7C68'))
    const [activeColorSVG, setActiveColorSVG] = useState('white')
    const [active, setActive] = useState({
-      'home': true,
+      'home': false,
       'discount': false,
       'dashboard': false,
       'message': false,
