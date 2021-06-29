@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SVG_arrow_down from '../../../../assets/svg/SVG_arrow_down';
 import MenuItem from './MenuItem'
-import getItemsRequest from '../../service/getMassiveItems'
+import getItemsRequest from '../../service/getItemsFromServer'
 
 const MenuGrid = (props) => {
    
@@ -28,11 +28,10 @@ const MenuGrid = (props) => {
             { items && items.items.map(item => {
                return item.category.map(category => {
                   if(category === props.category){
-                     return <MenuItem name={item.name} price={item.price} count={item.count} img={item.img} />
+                     return <MenuItem id={item.id} name={item.name} price={item.price} count={item.count} img={item.img} />
                   }
                })
-               
-            }) }
+            })}
          </div>
       </div>
    )
