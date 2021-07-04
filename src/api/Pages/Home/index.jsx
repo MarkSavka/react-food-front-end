@@ -1,8 +1,6 @@
 import React from 'react'
-import MenuPage from './MenuPage/MenuPage'
+import MenuPage from './Menu/MenuPage'
 import Order from './Order/Order'
-
-import './Styles/home.css'
 
 const Home = () => {
    
