@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MenuList from './MenuList'
+import MenuFilter from './MenuFilter'
 import MenuGrid from './MenuGrid'
 import '../../Styles/menu.css'
 
@@ -19,7 +19,7 @@ const Menu = () => {
    
       return(
          <div className="menu" >
-            <MenuList changeCategory={changeCategory} />
+            <MenuFilter changeCategory={changeCategory} />
             <MenuGrid category={category} fade={fade} changeFade={changeFade} />
          </div>
       )

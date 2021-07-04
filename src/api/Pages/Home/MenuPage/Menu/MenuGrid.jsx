@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import SVG_arrow_down from '../../../../assets/svg/SVG_arrow_down';
 import MenuItem from './MenuItem'
-import getItemsRequest from '../../service/getMassiveItems'
+import getItemsRequest from '../../../../service/getMassiveItems'
 
 const MenuGrid = (props) => {
    
    const [items, setItems] = useState(undefined);
    const [style, setStyle] = useState('menu_grid_items');
-   
-   // setFade('fade_out');
    
    useEffect( async () => {
       setItems( await getItemsRequest() );
@@ -25,14 +23,15 @@ const MenuGrid = (props) => {
             </button>
          </div>
          <div className={style + " " + props.fade} >
-            { items && items.items.map(item => {
-               return item.category.map(category => {
-                  if(category === props.category){
-                     return <MenuItem name={item.name} price={item.price} count={item.count} img={item.img} />
-                  }
+            {
+               items && items.map(item => {
+                  return item.category.map(category => {
+                     if(category === props.category){
+                        return <MenuItem name={item.name} price={item.price} count={item.count} img={item.img} />
+                     } 
+                  })
                })
-               
-            }) }
+            }
          </div>
       </div>
    )

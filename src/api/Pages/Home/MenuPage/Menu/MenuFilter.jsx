@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const MenuList = (props) => {
+const MenuFilter = (props) => {
    const [status, setStatus] = useState("status_line_child status_1");
    
    
@@ -22,4 +22,4 @@ const MenuList = (props) => {
    )
 }
 
-export default MenuList;
+export default MenuFilter;
