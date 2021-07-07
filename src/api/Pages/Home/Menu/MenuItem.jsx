@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from 'react'
 
-const MenuItem = (props) => {
-   const [name, setName] = useState('');
-   const [price, setPrice] = useState('');
-   const [count, setCount] = useState('');
-   const [img, setImg] = useState('');
+const MenuItem = ({ name, price, count, img}) => {
+   const [nameState, setName] = useState('');
+   const [priceState, setPrice] = useState('');
+   const [countState, setCount] = useState('');
+   const [imgState, setImg] = useState('');
    
    useEffect(() => {
-      setName(props.name || 'noname');
-      setPrice( "$" + (props.price || '0.00') );
-      setCount(props.count || '0');
-      setImg(props.img || 'https://www.flaticon.com/svg/vstatic/svg/868/868753.svg?token=exp=1619440906~hmac=d867d45481785f41c9ee85595e6a00b7')
+      setName(name || 'noname');
+      setPrice( "$" + (price || '0.00') );
+      setCount(count || '0');
+      setImg(img || 'https://www.flaticon.com/svg/vstatic/svg/868/868753.svg?token=exp=1619440906~hmac=d867d45481785f41c9ee85595e6a00b7')
    })
    
    return (
-      <div className="item">
+      <div className="item" onClick={ () => console.log() }>
          <img height="100px" width="100px" src={img} alt="item"/>
          <div className="description">
-            <p> { name } </p>
-            <p> { price } </p>
-            <p> { count } </p>
+            <p> { nameState } </p>
+            <p> { priceState } </p>
+            <p> { countState } </p>
          </div>
       </div>
    )

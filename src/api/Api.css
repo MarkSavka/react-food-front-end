@@ -1,6 +1,6 @@
-@import './style/header.css';
+@import './style/home_header.css';
 @import './style/home.css';
-@import './style/item.css';
+@import './style/menu_item.css';
 @import './style/menu.css';
 
 html{

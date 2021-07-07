@@ -5,9 +5,6 @@
 
 /*......Menu_List......*/
 .menu{
-
-}
-.menu{
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Barlow', sans-serif;
@@ -99,11 +96,14 @@
 button:focus{
     outline: none;
 }
-.menu .menu_grid{
+.menu_grid{
     height: calc( 100vh - ( var(--header-height) + var(--menu-page-padding) + var(--menu-list-height) + var(--header-margin-bottom) ));
     overflow: scroll;
 }
-.menu .menu_grid_items{
+.menu_grid::-webkit-scrollbar{
+    display: none;
+}
+.menu_grid_items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
