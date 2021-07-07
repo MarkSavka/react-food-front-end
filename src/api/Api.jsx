@@ -60,7 +60,7 @@ const Api = () => {
          case 'message':       setActiveLink('message'); break;
          case 'notification':  setActiveLink('notification'); break;
          case 'setting':       setActiveLink('setting'); break;
-         default:              setActiveLink('home'); break;
+         // default:              setActiveLink('home'); break;
       }
    }
 
