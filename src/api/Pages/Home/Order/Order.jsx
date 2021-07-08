@@ -1,9 +1,15 @@
 import React from 'react'
+import './Styles/order.css'
+
+import RadioButtons from './RadioButtons/radioButtons'
+import OrderItems from './OrderItems/orderItems'
 
 const Order = () => {
    return (
       <div className="order">
-         <p>Order</p>
+         <p>Order #342574</p>
+         <RadioButtons />
+         <OrderItems />
       </div>
    )
 }

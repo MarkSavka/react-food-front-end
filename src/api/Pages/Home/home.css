@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+.home{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* ************ menu_page ************ */
+
+.menu_page{
+    --menu-page-padding: 20px;
+    --menu-page-header-left-flex-basis: 70%;
+    --menu-page-header-right-flex-basis: calc(100% - var(--menu-page-header-left-flex-basis));
+
+    --header-padding: 20px;
+    --header-margin-bottom: 20px;
+    --header-min-height: 100px;
+    --header-height: calc( var(--header-min-height) - var(--header-padding)*2 );
+
+    --menu-list-height: 50px;
+
+    --menu-top-height: 50px;
+}
+
+.menu_page{
+    flex-basis: 70%;
+    padding: var(--menu-page-padding);
+    padding-bottom: 0;
+    max-height: 100vh;
+}
+
+/* ************ Order ************ */
+
+.order{
+    flex-basis: 30%;
+    background-color: #1F1D2B;
+    min-width: 30%;
+}
+.order p{
+    color: white;
+}
+
+/* ************ Basic ************ */
+
+p{
+    font-family: 'Barlow';
+}
