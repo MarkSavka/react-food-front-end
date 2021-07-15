@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Api.css'
+import './Api.sass'
 
 // Pages
 import Home from './Pages/Home/index'

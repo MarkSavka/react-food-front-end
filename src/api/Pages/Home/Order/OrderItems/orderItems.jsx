@@ -1,4 +1,3 @@
-import '../Styles/items.css'
 import SVG_delete from '../../../../assets/svg/SVG_delete'
 
 const OrderItems = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Styles/order.css'
 
 import RadioButtons from './RadioButtons/radioButtons'
 import OrderItems from './OrderItems/orderItems'
