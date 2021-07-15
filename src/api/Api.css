@@ -4,14 +4,15 @@
 @import './style/menu.css';
 
 html{
-    --padding-sidebar: 20px;
     --sidebar-nav-height: 60%;
     --wrapper_background-color: #252836;
     --sidebar-background-color: #1F1D2B;
 }
 
 .wrapper{
-    max-height: 100vh;
+    /* max-height: 100vh; */
+    min-height: 700px;
+    height: 100%;
     background-color: var(--wrapper_background-color);
     overflow: hidden;
     display: flex;
@@ -19,42 +20,46 @@ html{
 }
 .sidebar-router{
     display: flex;
-    height: calc(100vh - var(--padding-sidebar) * 2);
-    padding: var(--padding-sidebar);
-    padding-right: 0;
+    min-height: 700px;
+    height: 100%;
 
     background-color: var(--sidebar-background-color);
     flex-flow: column nowrap;
+    flex-basis: 100px;
 
     justify-content: space-between;
     align-items: center;
 }
-.sidebar-router .sidebar-router-logo{
+.sidebar-router-logo{
     border-radius: 8px;
     background-color: rgba(235, 150, 106, .2);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX( calc(var(--padding-sidebar)/2 *-1 ) );
+    margin: 20px;
 }
-.sidebar-router .sidebar-router-logo li{
+.sidebar-router-logo li{
     padding: 10px;
-}
-.sidebar-router .sidebar-router-nav{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
 }
 .sidebar-router li{
     list-style-type: none;
     border-radius: 8px 0 0 8px;
     padding: 10px;
 }
-.sidebar-router .sidebar-router-nav li{
+.sidebar-router-nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 10px;
+    width: 90%;
+}
+.sidebar-router-nav li{
+    padding-right: 20px;
     display: flex;
 }
-.sidebar-router .sidebar-router-nav li[data-active=true]{
+.sidebar-router-nav li[data-active=true]{
     background-color: #252836;
     margin: 10px auto;
 }
