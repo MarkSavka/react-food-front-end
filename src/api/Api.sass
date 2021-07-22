@@ -6,11 +6,15 @@
 @import './style/home/order_items.sass'
 @import './style/home/radio_buttons.sass'
 @import './style/animation/animation.sass'
+@import './style/main_styles.sass'
 
 html
     --sidebar-nav-height: 60%
     --wrapper_background-color: #252836
     --sidebar-background-color: #1F1D2B
+
+*
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 ::-webkit-scrollbar
     width: 0
@@ -68,10 +72,9 @@ html
         background-color: #252836
         margin: 10px auto
 
-li[data-active=true]
+    li[data-active=true]
 
-    a
-        background-color: #EA7C68
-        transition: 1s
-p
-    color: white
+        a
+            background-color: #EA7C68
+            transition: 1s
+
