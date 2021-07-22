@@ -22,28 +22,28 @@ header
       justify-content: center
       align-items: center
 
-.header-input-search input
-   border: 1px solid #393C49
-   border-radius: 10px
-   width: 220px
-   height: 48px
-   padding-left: 40px
-   color: white
-   font-family: "Lexend", sans-serif
-   background: #2D303E url(../../assets/img/search.png) no-repeat 10px center
-   background-size: 20px
+   input:focus
+      outline: none
 
-input:focus
-   outline: none
+   p
+      color: white
+      font-family: "Barlow", sans-serif
 
-header p
-   color: white
-   font-family: "Barlow", sans-serif
+      &:first-child
+         font-size: 28px
+         font-weight: 600
 
-   &:first-child
-      font-size: 28px
-      font-weight: 600
+      &:last-child
+         font-size: 16px
+         font-weight: 400
 
-   &:last-child
-      font-size: 16px
-      font-weight: 400
+   .header-input-search input
+      border: 1px solid #393C49
+      border-radius: 10px
+      width: 220px
+      height: 48px
+      padding-left: 40px
+      color: white
+      font-family: "Lexend", sans-serif
+      background: #2D303E url(../../assets/img/search.png) no-repeat 10px center
+      background-size: 20px
