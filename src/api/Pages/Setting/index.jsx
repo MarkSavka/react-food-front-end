@@ -2,7 +2,11 @@ import React from 'react';
 
 const Setting = () => {
     
-    return(<p>Setting</p>)
+    return(
+        <div className="setting">
+            <p>Setting</p>
+        </div>
+    )
 }
 
 export default Setting;
