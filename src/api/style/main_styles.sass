@@ -1,2 +1,34 @@
 p
-    color: white
+   color: white
+
+hr
+   background-color: #393C49
+   height: 3px
+   border-radius: 2px
+   border: none
+
+header
+   display: flex
+   width: 100%
+   min-height: var(--header-height)
+   justify-content: space-between
+   align-content: space-between
+
+   .header-data-info
+      flex-basis: var(--menu-page-header-left-flex-basis)
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-between
+      align-items: flex-start
+      height: 60px
+
+   p
+      font-family: var(--main-font)
+
+      &:first-child
+         font-size: 28px
+         font-weight: 600
+
+      &:last-child
+         font-size: 16px
+         font-weight: 400

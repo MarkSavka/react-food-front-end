@@ -1,4 +1,34 @@
 .dashboard
     width: 100%
-    min-height: 700px
-    height: 100vh
+    // min-height: 700px
+
+    height: calc(100vh - var(--page-padding) * 2)
+    padding: var(--page-padding)
+
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-template-rows: 7fr 15fr 17fr 33fr
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+
+    header
+        grid-area: 1 / 1 / 2 / 2
+        
+        display: flex
+        flex-flow: column
+        height: 85px
+
+    .total_statistic
+        grid-area: 2 / 1 / 3 / 2
+
+    .order_report
+        grid-area: 3 / 1 / 5 / 2
+        background-color: deeppink
+
+    .most_order
+        grid-area: 1 / 2 / 4 / 3
+        background-color: greenyellow
+
+    .most_type_order
+        grid-area: 4 / 2 / 5 / 3
+        background-color: cornsilk
