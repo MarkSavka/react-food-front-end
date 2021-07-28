@@ -1,0 +1,62 @@
+.total_item
+    
+    display: grid
+    grid-template-columns: 40px repeat(2, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    grid-column-gap: 0px
+    grid-row-gap: 0px
+    width: calc(100% - 40px - 40px)
+    background-color: #1F1D2B
+    border-radius: 15px
+    min-width: 200px
+    padding: 10px 20px
+
+    p[data-status=true]
+        color: #50D1AA
+
+        &::before
+            content: "+"
+
+    p[data-status=false]
+        color: #FF7CA3
+
+        &::before
+            content: "-"
+
+    .img
+        grid-area: 1 / 1 / 2 / 2
+        display: flex
+        align-items: center
+
+    .percent
+        grid-area: 1 / 2 / 2 / 4
+        display: flex
+        align-items: center
+        padding-left: 15px
+
+        p
+            font-size: 1.3em
+
+            &::after
+                content: "%"
+        
+        img
+            margin-left: 15px 
+
+    .result
+        grid-area: 2 / 1 / 3 / 4
+        display: flex
+        align-items: center
+
+        p
+            font-size: 1.7rem
+
+    .label
+        grid-area: 3 / 1 / 4 / 4
+        display: flex
+        align-items: center
+
+        p
+            font-size: 1.2em
+            color: gray
+

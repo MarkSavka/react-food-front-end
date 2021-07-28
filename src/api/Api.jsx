@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import './Api.sass'
 
 // Pages
@@ -83,6 +84,10 @@ const Api = () => {
 
    return (
       <Router>
+         <Helmet>
+            <title>Jaedar Food</title>
+            <script src="https://scripts.sirv.com/sirv.js"></script>
+         </Helmet>
          <div className="wrapper">
             <nav className="sidebar-router">
                <ul className="sidebar-router-logo">
