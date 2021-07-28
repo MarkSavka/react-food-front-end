@@ -16,7 +16,7 @@ const HeaderInfo = ({label}) => {
 
    return (
       <div className="header-data-info">
-         <p>{ label }</p>
+         <h1>{ label }</h1>
          <p>{ getLocalDate() }</p>
       </div>
    )

@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderInfo from '../../components/headerInfo';
+import OrderReport from './OrderReport';
 import TotalStatistic from './TotalStatistic';
 
 const Dashboard = () => {
@@ -11,7 +12,7 @@ const Dashboard = () => {
             <hr />
          </header>
          <TotalStatistic />
-         <div className="order_report"></div>
+         <OrderReport />
          <div className="most_order"></div>
          <div className="most_type_order"></div>
       </div>
