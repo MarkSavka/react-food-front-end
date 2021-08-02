@@ -15,7 +15,7 @@ const MenuItem = ({ name, price, count, img}) => {
    
    return (
       <div className="item" onClick={ () => console.log() }>
-         <img height="100px" width="100px" src={img} alt="item"/>
+         <img height="100px" width="100px" src={img || imgState} alt="item"/>
          <div className="description">
             <p> { nameState } </p>
             <p> { priceState } </p>

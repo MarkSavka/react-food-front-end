@@ -7,7 +7,7 @@ import getItemsRequest from '../../../service/getAllMenuItems'
 const MenuGrid = (props) => {
    
    const [items, setItems] = useState(undefined);
-   const [style, setStyle] = useState('menu_grid_items');
+   const style = 'menu_grid_items';
    
    useEffect( async () => {
       setItems( await getItemsRequest() );

@@ -50,6 +50,7 @@ const Api = () => {
       setActiveColorSVG('white')
    }, [])
 
+
    useEffect(() => {
       handleLocationActiveLink(window.location.pathname.split('/')[1])
    }, [window.location.pathname])
