@@ -28,7 +28,7 @@ const MenuGrid = (props) => {
                items && items.map(item => {
                   return item.category.map(category => {
                      if(category === props.category){
-                        return <MenuItem name={item.name} price={item.price} count={item.count} img={item.img} />
+                        return <MenuItem id={item.id} name={item.name} price={item.price} count={item.count} img={item.img} />
                      } 
                   })
                })
