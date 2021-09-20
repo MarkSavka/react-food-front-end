@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
-import './Api.sass'
+// import './Api.sass'
 
 // Pages
 import Home from './Pages/Home/index'
@@ -88,6 +88,7 @@ const Api = () => {
          <Helmet>
             <title>Jaedar Food</title>
             <script src="https://scripts.sirv.com/sirv.js"></script>
+            <link rel="stylesheet" href="./Api.sass" />
          </Helmet>
          <div className="wrapper">
             <nav className="sidebar-router">
