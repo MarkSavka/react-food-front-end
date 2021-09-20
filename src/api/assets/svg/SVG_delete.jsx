@@ -1,3 +1,4 @@
+import React from 'react'
 const SVG_delete = () => {
    return (
       <svg width="16" height="19" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">

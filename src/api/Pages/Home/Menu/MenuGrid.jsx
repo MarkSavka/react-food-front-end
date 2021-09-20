@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import SVG_arrow_down from '../../../assets/svg/SVG_arrow_down';
 import MenuItem from './MenuItem'
+import { useDispatch, useSelector } from 'react-redux'
 import getItemsRequest from '../../../service/getAllMenuItems'
+import { loadProducts } from '../../../redux/reducer';
 
 
 const MenuGrid = (props) => {
    
    const [items, setItems] = useState(undefined);
    const style = 'menu_grid_items';
+   // const dispatch = useDispatch();
    
-   useEffect( async () => {
-      setItems( await getItemsRequest() );
-      props.changeFade('fade_in');
-   }, [props.fade]);
+   useEffect( () => {
+      async function getItems(){
+         setItems( await getItemsRequest() );
+         props.changeFade('fade_in');
+      }
+      getItems()
+
+      // dispatch(loadProducts(getItemsRequest()))
+      // props.changeFade('fade_in');
+
+   }, [props, props.fade]);
    
    return (
       <div className="menu_grid">
